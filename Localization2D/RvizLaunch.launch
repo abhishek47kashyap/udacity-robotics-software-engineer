@@ -1,0 +1,3 @@
+<launch>
+  <node type="rviz" name="rviz" pkg="rviz" args="-d /home/abhishek47kashyap/Documents/udacity-robotics-swe/Localization_ws/src/EKF_lab.rviz" />
+</launch>
