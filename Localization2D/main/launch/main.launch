@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch" />
+    <include file="$(find robot_pose_ekf)/robot_pose_ekf.launch" />
+    <include file="$(find odom_to_trajectory)/launch/create_trajectory.launch" />
+    <include file="$(find turtlebot_teleop)/launch/keyboard_teleop.launch" />
+    <include file="/home/abhishek47kashyap/Documents/udacity-robotics-swe/Localization_ws/src/RvizLaunch.launch" />
+  
+</launch>
