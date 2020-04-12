@@ -4,8 +4,10 @@
 	<arg name="map_file" default="$(find my_robot)/maps/map.yaml"/>
 	<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
+<!-- 
 	<node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster"
       args="0 0 0 0 0 0 map odom 100"/>
+-->
 
 	<!-- amcl  -->
     	<node name="amcl" pkg="amcl" type="amcl" output="screen">
@@ -18,10 +20,10 @@
 	<!-- Define initial pose -->
 	<param name="initial_pose_x" value="0.0"/>
 	<param name="initial_pose_y" value="0.0"/>
-	<param name="initial_pose_a" value="0.0"/>
+	<param name="initial_pose_a" value="-1.57"/>
 
 	<!-- Overall filter -->
-	<param name="min_particles" value="100" />
+	<param name="min_particles" value="1000" />
 
 	</node>
         
@@ -36,7 +38,7 @@
 	<rosparam file="$(find my_robot)/config/local_costmap_params.yaml" command="load" />
 	<rosparam file="$(find my_robot)/config/global_costmap_params.yaml" command="load" />
 	<rosparam file="$(find my_robot)/config/base_local_planner_params.yaml" command="load" />
-  		</node>
+  	</node>
 
  
 	<node type="rviz" name="rviz" pkg="rviz" args="-d /home/abhishek47kashyap/Desktop/catkin_ws/src/localization.rviz" />
