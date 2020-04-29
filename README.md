@@ -25,12 +25,15 @@ An introduction to Gazebo: making models and creating worlds
 ROS essentials, chasing a ball
 
 ### Project 3: Where Am I
-Uses the ```amcl``` package for Adaptive Monte Carlo Localization for the robot to localize itself in the map
+ROS package used: ```amcl```
+Given a map generated  by pgm_creator, Adaptive Monte Carlo Localization for the robot to localize itself in the map
 
 ### Project 4: Map My World
-Loop closures are used for generating a map of the environment
+This project assumes known robot pose to map an environment using global loop closures
+ROS package used: ```rtabmap_ros```
 
 ### Project 5: Home Service Robot
 This is where all the previous projects come together. The Adaptive Monte-Carlo Localization algorithm 
 can be seen localizing the turtlebot in the map as it traverses from the 
 starting point to its destination via the pick-up waypoint.
+![](media/Project5 media/homeServiceRobot.gif)
