@@ -1,0 +1,5 @@
+<!-- Launches Create's dashboard -->
+
+<launch>
+  <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" args="-s create_dashboard"/>
+</launch>
