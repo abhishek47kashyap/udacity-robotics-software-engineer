@@ -1,4 +1,4 @@
-# Udacity's Robotics Software Engineer nanaodegree
+# Udacity's Robotics Software Engineer nanodegree
 #### Course website: [Robotics Software Engineer](www.udacity.com/course/robotics-software-engineer--nd209)
 
 There are a total of 5 projects, starting off easy with ROS essentials and building a world in Gazebo, and 
@@ -13,7 +13,7 @@ it's advised to have a separate workspace for every project.
 
 _Requirements_: **Ubuntu 16.04** and **ROS Kinetic**
 
-_Dependencies_: listed in every project's README
+_Dependencies_: listed in every project's README (will be updated, check back soon!)
 
 Before getting started, open the terminal and execute this line:
 ```
